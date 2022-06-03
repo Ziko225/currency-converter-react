@@ -1,6 +1,6 @@
 import "./style.css";
 
-const Main = ({content}) => (
+const Main = ({ content }) => (
     <main className="main">
         <h1 className="article__header">Kalkulator walutowy</h1>
         {content}
