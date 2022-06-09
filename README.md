@@ -1,6 +1,14 @@
 # Demo page
 https://ziko225.github.io/currency-converter-react/
 
+# Used Technologies
+- HTML
+- CSS
+- BEM
+- JavaScript
+- React
+- Create-React-App
+- Babel
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
