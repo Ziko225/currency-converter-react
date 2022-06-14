@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import "./style.css";
 
 const Clock = () => {
-
     const [date, setDate] = useState(new Date());
 
     useEffect(() => {
@@ -15,7 +14,6 @@ const Clock = () => {
         };
     }, []);
 
-
     return (
         <p className='date'>
             {date.toLocaleString(undefined, {
@@ -26,7 +24,7 @@ const Clock = () => {
                 month: "long",
             })}
         </p>
-    )
-}
+    );
+};
 
-export default Clock
+export default Clock;

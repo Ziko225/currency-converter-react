@@ -1,25 +1,17 @@
 import { useState } from "react";
 import "./style.css";
 
-
 const Form = () => {
-  // currency From 
   const [currencyFrom, setCurrencyFrom] = useState("4.44");
   const onSelectChangeFrom = ({ target }) => setCurrencyFrom(target.value)
 
-  // currency to 
   const [currencyTo, setCurrencyto] = useState("1");
   const onSelectChangeTo = ({ target }) => setCurrencyto(target.value)
 
-  // ammount
   const [ammount, setAmmount] = useState("");
   const ammountChange = ({ target }) => setAmmount(target.value)
 
-  // result
   let result = (+ammount * +currencyFrom) / +currencyTo
-
-
-
 
   return (
     <form >
@@ -73,6 +65,7 @@ const Form = () => {
         </label>
       </div>
     </form>
-  )
-}
-export default Form
+  );
+};
+
+export default Form;

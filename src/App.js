@@ -4,7 +4,6 @@ import Main from "./Main/index.js"
 import Time from "./Clock/index.js"
 
 function App() {
-
   return (
     <div>
       <Main
@@ -14,6 +13,6 @@ function App() {
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
