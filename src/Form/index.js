@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./style.css";
+import { Input, Select, Block } from "./styled";
 
 const Form = () => {
   const [currencyFrom, setCurrencyFrom] = useState("4.44");
@@ -15,18 +15,17 @@ const Form = () => {
 
   return (
     <form >
-      <div className="form__block">
+      <Block>
         <label>
-          <input placeholder="Wpisz kwotę"
+          <Input placeholder="Wpisz kwotę"
             min="0"
             type="number"
-            className="form__input"
             value={ammount}
             onChange={ammountChange}
           />
         </label>
         <label>
-          <select className="form__select" name="currencyFrom" value={currencyFrom} onChange={onSelectChangeFrom}>
+          <Select name="currencyFrom" value={currencyFrom} onChange={onSelectChangeFrom}>
             <option value="1">PLN</option>
             <option value="4.44">USD</option>
             <option value="4.68">EUR</option>
@@ -34,14 +33,13 @@ const Form = () => {
             <option value="5.46">GBP</option>
             <option value="4.47">CHF</option>
             <option value="0.15">UAH</option>
-          </select>
+          </Select>
         </label>
-      </div>
-      <div className="form__block">
+      </Block>
+      <Block>
         <label>
-          <input
+          <Input
             disabled
-            className="form__input"
             value={
               result < 0 ? result = "N/A" : result.toFixed(2)
                 &&
@@ -49,8 +47,8 @@ const Form = () => {
             } />
         </label>
         <label>
-          <select
-            className="form__select form__select--backgroundColorGrey"
+          <Select
+            grey
             name="currencyTo"
             value={currencyTo}
             onChange={onSelectChangeTo} >
@@ -61,9 +59,9 @@ const Form = () => {
             <option value="4.47">CHF</option>
             <option value="0.15">UAH</option>
             <option value="1">PLN</option>
-          </select>
+          </Select>
         </label>
-      </div>
+      </Block>
     </form>
   );
 };

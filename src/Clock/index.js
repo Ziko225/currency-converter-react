@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./style.css";
+import { Data } from "./styled"
 
 const Clock = () => {
     const [date, setDate] = useState(new Date());
@@ -15,7 +15,7 @@ const Clock = () => {
     }, []);
 
     return (
-        <p className='date'>
+        <Data>
             {date.toLocaleString(undefined, {
                 hour: "numeric",
                 minute: "numeric",
@@ -23,7 +23,7 @@ const Clock = () => {
                 day: "numeric",
                 month: "long",
             })}
-        </p>
+        </Data>
     );
 };
 

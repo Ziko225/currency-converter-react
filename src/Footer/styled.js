@@ -1,4 +1,6 @@
-.footer {
+import styled from "styled-components";
+
+export const StyledFooter = styled.footer`
     font-size: smaller;
     background-color: #222;
     color: white;
@@ -7,4 +9,4 @@
     width: 100%;
     color: white;
     text-align: center;
-}
+`;

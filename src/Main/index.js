@@ -1,12 +1,12 @@
-import "./style.css";
+import { Content, Header, Bottom } from "./styled";
 
 const Main = ({ content, title }) => {
-    return (<main className="main">
+    return (<Content>
         {title}
-        <h1 className="main__header">Kalkulator walutowy</h1>
+        <Header>Kalkulator walutowy</Header>
         {content}
-        <p className="main__bottom">kurs z dnia 10.05.2022</p>
-    </main>)
+        <Bottom>kurs z dnia 10.05.2022</Bottom>
+    </Content>)
 };
 
 export default Main;

@@ -8,7 +8,7 @@ html {
 }
 
 .body {
-  background-image: url(/src/img/background.jpg);
+  background-image: url(/src/background.jpg);
   background-size: 190vmax;
   background-repeat: no-repeat;
   height: auto;
