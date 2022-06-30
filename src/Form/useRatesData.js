@@ -9,7 +9,7 @@ export const useRatesData = () => {
     useEffect(() => {
         const getDate = async () => {
             try {
-                const response = await axios.get("http://127.0.0.1:5500/src/currencies.json")
+                const response = await axios.get("https://api.exchangerate.host/latest")
                 setDate(response.data.date);
                 setRates(response.data.rates)
                 setStatus("ok")
