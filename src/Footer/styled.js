@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledFooter = styled.footer`
+export const Content = styled.footer`
     font-size: smaller;
     background-color: #222;
     color: white;

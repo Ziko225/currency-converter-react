@@ -1,11 +1,10 @@
-import { Content, Header, Bottom } from "./styled";
+import { Content, Header } from "./styled";
 
 const Main = ({ content, title }) => {
     return (<Content>
         {title}
         <Header>Kalkulator walutowy</Header>
         {content}
-        <Bottom>kurs z dnia 10.05.2022</Bottom>
     </Content>)
 };
 

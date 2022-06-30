@@ -1,7 +1,7 @@
-import Form from "./Form/index.js"
-import Footer from "./Footer/index.js"
-import Main from "./Main/index.js"
-import Time from "./Clock/index.js"
+import Form from "./Form/index.js";
+import Footer from "./Footer/index.js";
+import Main from "./Main/index.js";
+import Time from "./Clock/index.js";
 
 function App() {
   return (

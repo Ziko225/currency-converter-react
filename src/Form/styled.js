@@ -30,3 +30,12 @@ export const Block = styled.div`
     height: 30px;
     padding: 10px;
 `;
+
+export const Bottom = styled.p`
+    font-family: 'Inconsolata', monospace;
+    margin-bottom: 0;
+`;
+
+export const Error = styled.h3`
+    color: #FF4749;
+`;

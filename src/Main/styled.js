@@ -14,8 +14,3 @@ export const Content = styled.main`
 export const Header = styled.h1`
     margin: 5px;
 `;
-
-export const Bottom = styled.p`
-    font-family: 'Inconsolata', monospace;
-    margin-bottom: 0;
-`;
