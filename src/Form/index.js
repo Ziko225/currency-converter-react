@@ -11,13 +11,13 @@ const Form = () => {
   const [currencyTo, setCurrencyto] = useState("USD");
   const onSelectChangeTo = ({ target }) => setCurrencyto(target.value)
 
-  const [ammount, setAmmount] = useState("");
+  const [amount, setAmmount] = useState("");
   const ammountChange = ({ target }) => setAmmount(target.value)
 
-  const result = (ammount * rates[currencyTo]) / rates[currencyFrom]
+  const result = (amount * rates[currencyTo]) / rates[currencyFrom]
 
   if (status === "error") {
-    return <Error>Usp, coś poszło nie tak!</Error>
+    return <Error>Ups, coś poszło nie tak!</Error>
   } else if (status === "loading") {
     return <h2>loading . . .</h2>
   }
@@ -28,7 +28,7 @@ const Form = () => {
           <Input placeholder="Wpisz kwotę"
             min="0"
             type="number"
-            value={ammount}
+            value={amount}
             onChange={ammountChange}
           />
         </label>
