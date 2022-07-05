@@ -8,11 +8,11 @@ const Form = () => {
   const [currencyFrom, setCurrencyFrom] = useState("PLN");
   const onSelectChangeFrom = ({ target }) => setCurrencyFrom(target.value)
 
-  const [currencyTo, setCurrencyto] = useState("USD");
-  const onSelectChangeTo = ({ target }) => setCurrencyto(target.value)
+  const [currencyTo, setCurrencyTo] = useState("USD");
+  const onSelectChangeTo = ({ target }) => setCurrencyTo(target.value)
 
   const [amount, setAmmount] = useState("");
-  const ammountChange = ({ target }) => setAmmount(target.value)
+  const amountChange = ({ target }) => setAmmount(target.value)
 
   const result = (amount * rates[currencyTo]) / rates[currencyFrom]
 
@@ -29,7 +29,7 @@ const Form = () => {
             min="0"
             type="number"
             value={amount}
-            onChange={ammountChange}
+            onChange={amountChange}
           />
         </label>
         <label>
